@@ -1,0 +1,145 @@
+.cadastro {
+  background-color: #3C2C3E;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.caixa-inputs {
+  width: 450px;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 110px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.caixa-inputs h3 {
+  text-align: center;
+  background: -webkit-linear-gradient(280deg, #5d4574, #9F5F80);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  font-size: 34px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.inputs label {
+  color: #FFFFFF;
+  opacity: 0.3;
+  font-weight: 400;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.inputs input {
+  border-radius: 15px;
+  border: none;
+  height: 40px;
+  background: #ffffff04;
+  color: white;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.inputs input:focus {
+  outline: none;
+}
+
+img.vetor-3 {
+  position: absolute;
+  bottom: 0;
+  right: 120px;
+  height: 350px;
+  animation: vetor-animation 8s ease-in-out infinite;
+}
+
+img.vetor-4 {
+  position: absolute;
+  right: 0;
+  height: 500px;
+  animation: vetor-animation-2 5s ease-in-out infinite;
+}
+
+.circlue-2 {
+  width: 150px;
+  min-height: 150px;
+  background: linear-gradient(300deg, rgba(44, 44, 44, 0.034), rgba(139, 139, 139, 0.034));
+  border-radius: 50%;
+  position: absolute;
+  left: 25px;
+  bottom: 0;
+  animation: circlue-animation 8s ease-in-out infinite;
+}
+
+.circlue-3 {
+  width: 200px;
+  min-height: 200px;
+  background: linear-gradient(150deg, rgba(61, 61, 61, 0.034), rgba(146, 146, 146, 0.034));
+  border-radius: 50%;
+  position: absolute;
+  left: 40%;
+  bottom: 0;
+  animation: circlue-animation 12s ease-in-out infinite;
+}
+
+a.buttons {
+  padding: 10px 20px;
+  border-radius: 25px;
+  margin-top: 18px;
+  color: white;
+  text-decoration: none;
+  background: linear-gradient(275.01deg, #F1AE89 -80.19%, rgba(147, 171, 211, 0) 235.4%);
+}
+
+a.buttons:hover {
+  background: linear-gradient(180.01deg, #f79560 -80.19%, rgba(147, 171, 211, 0) 235.4%);
+}
+
+@keyframes vetor-animation {
+  0% {
+    transform: scale(100%);
+  }
+
+  50% {
+    transform: scale(115%);
+  }
+
+  100% {
+    transform: scale(100%);
+  }
+}
+
+@keyframes vetor-animation-2 {
+  0% {
+    transform: scale(100%);
+  }
+
+  50% {
+    transform: scaleX(108%);
+  }
+
+  100% {
+    transform: scale(100%);
+  }
+}
+
+
+@keyframes circlue-animation {
+  0% {
+    transform: translateY(110%);
+  }
+
+  100% {
+    transform: translateY(-250%);
+  }
+}

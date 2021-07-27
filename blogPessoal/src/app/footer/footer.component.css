@@ -1,0 +1,34 @@
+.footer{
+    background-color: rgb(47, 46, 48);
+    width: 100%;
+    height: 230px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.redes-sociais{
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 10px;
+}
+.redes-sociais a{
+    margin-top: 45px;
+    font-size: 24px;
+}
+.redes-sociais a:hover{
+    color: blueviolet;
+    cursor: pointer;
+}
+
+.rodape{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.footer span{
+    color: white;
+    text-align: center;
+}
