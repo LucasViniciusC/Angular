@@ -15,6 +15,7 @@
   margin-top: 20px;
   display: flex;
   flex-direction: column;
+  animation: animation-cadastro .9s ease-in-out alternate;
 }
 
 .caixa-inputs h3 {
@@ -58,16 +59,16 @@
 img.vetor-3 {
   position: absolute;
   bottom: 0;
-  right: 120px;
-  height: 350px;
-  animation: vetor-animation 8s ease-in-out infinite;
+  right: 220px;
+  height: 230px;
+  animation: vetor-animation 6s ease-in-out infinite, elementos-reload 2s ease , move-vetor-1 .9s ease-in-out;
 }
 
 img.vetor-4 {
   position: absolute;
   right: 0;
   height: 500px;
-  animation: vetor-animation-2 5s ease-in-out infinite;
+  animation: vetor-animation-2 5s ease-in-out infinite, elementos-reload 2s ease, move-vetor-2 .9s ease-in-out;
 }
 
 .circlue-2 {
@@ -141,5 +142,46 @@ a.buttons:hover {
 
   100% {
     transform: translateY(-250%);
+  }
+}
+
+@keyframes elementos-reload {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animation-cadastro {
+  0% {
+    /* transform: translateX(-50%); */
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes move-vetor-1 {
+  0% {
+    transform: translateX(-90%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes move-vetor-2 {
+  0% {
+    transform: translateX(50%);
+  }
+
+  100% {
+    transform: translateX(0);
   }
 }
