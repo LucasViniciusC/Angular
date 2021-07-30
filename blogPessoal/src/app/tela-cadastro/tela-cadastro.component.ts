@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import Swal from 'sweetalert2';
 import { Usuario } from '../model/Usuario';
 import { AuthService } from '../service/auth.service';
 
@@ -13,10 +14,10 @@ export class TelaCadastroComponent implements OnInit {
   confirmarSenha: string;
   tipoUsuarios: string;
 
-  constructor(private authService: AuthService, private router: Router){}
+  constructor(private authService: AuthService, private router: Router) {}
 
   ngOnInit() {
-    window.scroll(0, 0);
+    window.scroll(0,0);
   }
 
   confirmaSenha(event: any) {
@@ -29,19 +30,39 @@ export class TelaCadastroComponent implements OnInit {
 
   cadastrar() {
     this.usuario.tipo = this.tipoUsuarios;
-
     if (this.usuario.senha != this.confirmarSenha) {
-      alert('Senhas não conferem!!');
-    } else {
-      this.authService.cadastrar(this.usuario).subscribe((resp: Usuario) => {
-        this.usuario = resp;
-        this.router.navigate(['/logar'])
-        alert('Usuário cadastratado com sucesso!');
-      }, erro =>{
-        if(erro.status == 400){
-          alert('Usuário já cadastrado!')
-        }
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Senhas não conferem',
       });
+    } else {
+      this.authService.cadastrar(this.usuario).subscribe(
+        (resp: Usuario) => {
+          this.usuario = resp;
+          this.router.navigate(['/logar']);
+          Swal.fire({
+            icon: 'success',
+            title: 'Perfeito',
+            text: 'Usuário cadastratado com sucesso!',
+          });
+        },
+        (erro) => {
+          if (erro.status == 400) {
+            Swal.fire({
+              icon: 'warning',
+              title: 'Usuário já cadastrado!',
+              text: 'Verifique seus dados.',
+            });
+          } else if(erro.status == 500){
+            Swal.fire({
+              icon: 'warning',
+              title: 'Oops...',
+              text: 'Algum campo não foi preenchido corretamente',
+            });
+          }
+        }
+      );
     }
   }
 }

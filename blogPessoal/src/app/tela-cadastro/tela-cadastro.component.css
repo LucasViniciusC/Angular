@@ -42,9 +42,9 @@
 }
 
 .inputs input {
-  border-radius: 15px;
+  border-radius: 8px;
   border: none;
-  height: 40px;
+  height: 35px;
   background: #ffffff04;
   color: white;
   padding: 10px;
@@ -55,12 +55,29 @@
   outline: none;
 }
 
+.inputs select:focus {
+  outline: none;
+}
+
+.inputs input::selection {
+  background: #ffffff04;
+}
+
+.inputs select {
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.027);
+  border: none;
+  height: 35px;
+  color: rgb(0, 0, 0);
+  font-weight: 300;
+}
+
 img.vetor-3 {
   position: absolute;
   bottom: 0;
   right: 220px;
   height: 230px;
-  animation: vetor-animation 6s ease-in-out infinite, elementos-reload 2s ease , move-vetor-1 .9s ease-in-out;
+  animation: vetor-animation 6s ease-in-out infinite, elementos-reload 2s ease, move-vetor-1 .9s ease-in-out;
 }
 
 img.vetor-4 {

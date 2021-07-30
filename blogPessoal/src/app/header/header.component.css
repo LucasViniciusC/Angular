@@ -10,7 +10,8 @@ a .button-edit {
 }
 
 .header button {
-  border: 1px solid rgba(255, 255, 255, 0);
+  /* border: 1px solid rgba(255, 255, 255, 0); */
+  border: none;
   color: white;
   text-transform: uppercase;
 }
@@ -19,6 +20,7 @@ a .button-edit {
   background: none;
   border-bottom: 1px solid blueviolet;
   color: blueviolet;
+  border: none;
 }
 
 img.img-profile {
