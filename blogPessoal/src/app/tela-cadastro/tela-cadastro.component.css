@@ -7,12 +7,11 @@
 
 .caixa-inputs {
   width: 450px;
-  height: 500px;
+  height: 680px;
   position: absolute;
   top: 0;
   left: 0;
   margin-left: 110px;
-  margin-top: 20px;
   display: flex;
   flex-direction: column;
   animation: animation-cadastro .9s ease-in-out alternate;
@@ -26,7 +25,7 @@
   font-weight: 600;
   font-size: 34px;
   padding: 10px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .inputs label {
@@ -93,16 +92,17 @@ img.vetor-4 {
   animation: circlue-animation 12s ease-in-out infinite;
 }
 
-a.buttons {
+button.buttons {
   padding: 10px 20px;
   border-radius: 25px;
   margin-top: 18px;
   color: white;
   text-decoration: none;
   background: linear-gradient(275.01deg, #F1AE89 -80.19%, rgba(147, 171, 211, 0) 235.4%);
+  border: none;
 }
 
-a.buttons:hover {
+button.buttons:hover {
   background: linear-gradient(180.01deg, #f79560 -80.19%, rgba(147, 171, 211, 0) 235.4%);
 }
 

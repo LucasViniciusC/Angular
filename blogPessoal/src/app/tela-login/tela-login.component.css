@@ -61,7 +61,7 @@
   margin-bottom: 40px;
 }
 
-.buttons a {
+.buttons button {
   padding: 10px 20px;
   margin-left: 10px;
   border-radius: 25px;
@@ -69,25 +69,27 @@
   text-decoration: none;
 }
 
-.buttons a:nth-child(1) {
+.buttons button:nth-child(1) {
   padding: 10px 20px;
   margin-left: 10px;
   border-radius: 25px;
   background: linear-gradient(250.14deg, #A2B29F 0.36%, rgba(161, 202, 226, 0) 165.41%);
+  border: none;
 }
 
-.buttons a:nth-child(2) {
+.buttons button:nth-child(2) {
   padding: 10px 20px;
   margin-left: 10px;
   border-radius: 25px;
   background: linear-gradient(275.01deg, #F1AE89 -80.19%, rgba(147, 171, 211, 0) 235.4%);
+  border: none;
 }
 
-.buttons a:hover:nth-child(1) {
+.buttons button:hover:nth-child(1) {
   background: linear-gradient(320deg, #9fc798 0.36%, rgba(161, 202, 226, 0) 165.41%);
 }
 
-.buttons a:hover:nth-child(2) {
+.buttons button:hover:nth-child(2) {
   background: linear-gradient(320deg, #faa171 -80.19%, rgba(147, 171, 211, 0) 235.4%);
 }
 

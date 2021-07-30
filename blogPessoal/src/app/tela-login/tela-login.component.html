@@ -9,16 +9,16 @@
     <div class="row m-0 p-0 mt-2">
       <div class="col-md-8 inputs">
         <label for="">E-mail</label>
-        <input type="text">
+        <input [(ngModel)]="usuarioLogin.usuario" name="email" type="text">
 
         <label for="">Senha</label>
-        <input type="password">
+        <input [(ngModel)]="usuarioLogin.senha" name="senha" type="password">
       </div>
     </div>
     <div class="row m-0 p-0 d-flex justify-content-center">
       <div class="col-md-8 buttons ml-3">
-        <a href="" class="">Acessar</a>
-        <a routerLink='/cadastrar' class="">Cadastrar</a>
+        <button (click)='logar()' href="" class="">Acessar</button>
+        <button routerLink='/cadastrar' class="">Cadastrar</button>
       </div>
     </div>
     <div class="row">

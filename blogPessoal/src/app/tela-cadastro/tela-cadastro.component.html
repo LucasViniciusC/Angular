@@ -6,27 +6,34 @@
   <form class="caixa-inputs">
     <h3>Novo usuário</h3>
     <div class="row m-0 p-0 mt-1">
-      <div class="col-md-12 inputs">
+      <div class="col-md-12 inputs ">
         <label for="">Nome:</label>
-        <input type="text">
-
-        <label for="">Sobrenome:</label>
-        <input type="text">
+        <input [(ngModel)]='usuario.nome' name="nome" id="nome" type="text">
 
         <label for="">E-mail:</label>
-        <input type="email">
+        <input [(ngModel)]='usuario.usuario' name="email" id="email" type="email">
+
+        <label for="">Foto:</label>
+        <input [(ngModel)]='usuario.foto' name="foto" id="foto" type="text">
 
         <label for="">Senha:</label>
-        <input type="password">
+        <input (input)='confirmaSenha($event)' name="senha" id="senha" type="password">
 
         <label for="">Confirma Senha:</label>
-        <input type="password">
+        <input [(ngModel)]='usuario.senha' name="confirmaSenha" id="confirmaSenha" type="password">
+
+        <label for="">Tipo de usuário:</label>
+        <select (change)='tipoUsuario($event)' name="tipoUsuario" id="tipo" type="select">
+          <option>Qual é o seu tipo de Usuário</option>
+          <option value="normal">Normal</option>
+          <option value="adm">Administrador</option>
+        </select>
       </div>
     </div>
     <div class="row">
-        <div class="col-md-12 d-flex justify-content-center">
-            <a class="buttons" href="">Cadastrar</a>
-        </div>
+      <div class="col-md-12 d-flex justify-content-center">
+        <button type="submit" (click)='cadastrar()' class="buttons" href="">Cadastrar</button>
+      </div>
     </div>
   </form>
 </div>
