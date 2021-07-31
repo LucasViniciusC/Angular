@@ -110,17 +110,33 @@ img.vetor-4 {
 }
 
 button.buttons {
-  padding: 10px 20px;
+  width: 120px;
+  height: 40px;
   border-radius: 25px;
   margin-top: 18px;
+  margin-left: 18px;
   color: white;
   text-decoration: none;
   background: linear-gradient(275.01deg, #F1AE89 -80.19%, rgba(147, 171, 211, 0) 235.4%);
   border: none;
 }
+button.buttons-2{
+  width: 120px;
+  height: 40px;
+  border-radius: 25px;
+  margin-top: 18px;
+  margin-left: 18px;
+  color: white;
+  text-decoration: none;
+  background: linear-gradient(275.01deg, #f54049ab -80.19%, rgba(147, 171, 211, 0) 235.4%);
+  border: none;
+}
 
 button.buttons:hover {
   background: linear-gradient(180.01deg, #f79560 -80.19%, rgba(147, 171, 211, 0) 235.4%);
+}
+button.buttons-2:hover {
+  background: linear-gradient(275.01deg, #c40912ab -80.19%, rgba(147, 171, 211, 0) 235.4%);
 }
 
 @keyframes vetor-animation {

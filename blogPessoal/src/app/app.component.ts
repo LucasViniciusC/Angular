@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import Swal from 'sweetalert2';
+import { AuthService } from './service/auth.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,7 +7,8 @@ import Swal from 'sweetalert2';
 })
 export class AppComponent {
   title = 'blogPessoal';
-  alertNativo(){
-    alert('alerta')
-  }
+  
+  constructor(
+    public auth: AuthService
+  ){}
 }

@@ -1,0 +1,102 @@
+.banner-top {
+  width: 100%;
+  height: 480px;
+  background: linear-gradient(200deg, #050600, rgb(66, 48, 83))
+}
+
+.svg {
+  width: 480px;
+  height: 450px;
+  animation: svg-animation 7s ease-in-out infinite;
+}
+
+.caixa-texto {
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+}
+
+.caixa-texto h2 {
+  font-size: 34pt;
+  font-weight: 800;
+  margin-left: 25px;
+}
+
+.caixa-texto h5 {
+  font-size: 20pt;
+  font-weight: 200;
+  text-align: start;
+  margin-left: 25px;
+  margin-top: 2px;
+}
+
+.banner{
+    display: flex;
+}
+.svg-caixa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+  background: rgba(255, 255, 255, 0.603);
+}
+.buttons{
+  display: flex;
+}
+
+.buttons a{
+  width: 150px;
+  height: 50px;
+  border: 1px solid rgb(114, 55, 252);
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+  text-decoration: none;
+  margin-top: 20px;
+  color: rgb(223, 223, 223);
+  transition: .3s ease-in-out ;
+}
+.buttons a:hover{
+  transform: translateY(-10%);
+  border-color: rgb(114, 55, 252) ;
+  color: rgb(219, 219, 219);
+  background: rgb(114, 55, 252);
+}
+.buttons a:nth-child(2){
+  border: 1px solid white;
+  background: white;
+  color: black;
+}
+
+.buttons a:nth-child(2):hover{
+  background: rgb(230, 228, 228);
+  
+}
+
+.modal-content {
+  background-color: rgb(143, 133, 165) ;
+}
+
+
+
+
+
+
+
+
+@keyframes svg-animation{
+  0%{
+    transform: translateY(-5%);
+  }
+  50%{
+    transform: translateY(5%);
+    transform: rotate(-5deg);
+  }
+  100%{
+    transform: translateY(-5%);
+  }
+}

@@ -15,7 +15,6 @@
   margin-right: 80px;
   display: flex;
   flex-direction: column;
-  animation: animation-cadastro 1s ease-in-out;
 }
 
 .caixa-inputs h3 {
@@ -116,7 +115,6 @@
 img.vetor-1 {
     position: absolute;
     animation: vetor-animation 8s ease-in-out infinite, elementos-reload 2s ease, move-vetor-1 .6s ease-in-out;
-    z-index: 1000;
 }
 
 img.vetor-2 {
@@ -172,13 +170,13 @@ img.vetor-2 {
 
 @keyframes vetor-animation-2 {
   0%{
-    transform: scale(100%);
+    transform: scaleX(100%);
   }
   50%{
     transform: scaleX(108%);
   }
   100%{
-    transform: scale(100%);
+    transform: scaleX(100%);
   }
 }
 
@@ -205,6 +203,7 @@ img.vetor-2 {
    opacity: 0;
   }
   100%{
+    opacity: 1;
   }
 }
 

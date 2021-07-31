@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark header">
+<nav class="navbar navbar-expand-lg navbar-dark  header">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -6,17 +6,17 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto d-flex align-items-center">
       <li class="nav-item active">
-        <img src="https://i.imgur.com/MVXR0iX.png" class="img-profile img-fluid">
+        <img src="{{foto}}" class="img-profile img-fluid">
       </li>
       <li>
-        <h2>Sejá bem vindo</h2>
+        <h2>Olá {{nome}}</h2>
       </li>
       <li>
         <p><a href=""><i class="far fa-edit button-edit"></i></a></p>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <button class="btn btn-outline-success my-2 my-sm-0  btn-exit" type="submit">Sair<i class="fas fa-sign-out-alt ml-2"></i></button>
+      <button class="btn my-2 my-sm-0  btn-exit" type="submit" (click)='sair()'>Sair<i class="fas fa-sign-out-alt ml-2"></i></button>
     </form>
   </div>
 </nav>

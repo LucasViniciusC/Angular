@@ -28,12 +28,7 @@ export class TelaLoginComponent implements OnInit {
       environment.token = this.usuarioLogin.token
       environment.foto = this.usuarioLogin.foto
       environment.id = this.usuarioLogin.id
-
-      console.log(environment.nome)
-      console.log(environment.token)
-      console.log(environment.foto )
-      console.log(environment.id)
-      
+        
       const Toast = Swal.mixin({
         toast: true,
         position: 'top-end',
