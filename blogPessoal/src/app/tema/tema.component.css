@@ -1,0 +1,130 @@
+.conteudo-tema {
+  width: 100%;
+  height: 480px;
+  background: linear-gradient(200deg, #050600, rgb(66, 48, 83));
+  position: relative;
+  
+}
+
+.svg-1 {
+  width: 550px;
+  height: 550px;
+  transform: rotate(50deg);
+  position: absolute;
+  left: 50%;
+  animation: animation-svg-1 9s ease-in-out infinite;
+}
+
+.svg-2 {
+  width: 450px;
+  height: 450px;
+  position: absolute;
+  left: 0;
+  bottom: -10%;
+  animation: animation-svg-2 5s ease-in-out infinite;
+}
+
+.caixa-tema {
+  margin-top: 40px;
+}
+
+.caixa-tema i {
+  color: white;
+}
+
+.caixa-tema h5 {
+  font-size: 20pt;
+  font-weight: 200;
+  text-align: start;
+  margin-left: 25px;
+  margin-top: 2px;
+}
+
+.caixa-tema h2 {
+  font-size: 35pt;
+  font-weight: 800;
+  margin-left: 25px;
+}
+
+.input-busca input {
+  background: rgba(65, 65, 65, 0.308);
+  height: 50px;
+  color: rgb(255, 255, 255);
+  border: none;
+  margin-top: 22px;
+  border-radius: 10px;
+}
+
+.input-busca input::placeholder {
+  color: rgb(124, 124, 124);
+  padding-left: 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons button {
+  width: 150px;
+  height: 50px;
+  border: 1px solid rgb(182, 182, 182);
+  background: none;
+  border-radius: 12px;
+  text-decoration: none;
+  margin-top: 20px;
+  color: rgb(223, 223, 223);
+  transition: .3s ease-in-out;
+}
+
+.buttons button:hover {
+  border: 1px solid blueviolet;
+  transform: scale(110%);
+}
+
+.tabela-temas h2{
+    color: rgba(6, 0, 12, 0.384);
+    font-size: 34pt;
+    font-weight: 600
+}   
+
+.table .thead-dark th{
+    border-color: none;
+    background-color: rgb(46, 46, 46);
+}
+@keyframes animation-svg-1 {
+  0% {
+    transform: translate(-10%);
+    opacity: 5%;
+  }
+
+  50% {
+    transform: translateY(25%);
+    transform: rotate(-20deg);
+    opacity: 10%;
+  }
+
+  100% {
+    transform: translate(-10%);
+    opacity: 5%;
+
+  }
+}
+
+
+
+@keyframes animation-svg-2 {
+  0% {
+    transform: translateY(-5%);
+  }
+
+  50% {
+    transform: translateY(20%);
+    transform: scale(120%);
+  }
+
+  100% {
+    transform: translateY(-5%);
+  }
+}

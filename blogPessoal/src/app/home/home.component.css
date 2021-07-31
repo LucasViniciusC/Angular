@@ -78,7 +78,11 @@
 }
 
 .modal-content {
-  background-color: rgb(143, 133, 165) ;
+  background-color: rgb(51 51 56);
+}
+
+.modal-header{
+  border: none;
 }
 
 

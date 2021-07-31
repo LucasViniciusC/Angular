@@ -12,6 +12,7 @@ import { FooterComponent } from './footer/footer.component';
 import { TelaLoginComponent } from './tela-login/tela-login.component';
 import { TelaCadastroComponent } from './tela-cadastro/tela-cadastro.component';
 import { HomeComponent } from './home/home.component';
+import { TemaComponent } from './tema/tema.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { HomeComponent } from './home/home.component';
     FooterComponent,
     TelaLoginComponent,
     TelaCadastroComponent,
-    HomeComponent
+    HomeComponent,
+    TemaComponent
   ],
   imports: [
     BrowserModule,

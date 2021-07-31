@@ -3,7 +3,7 @@
     <div class="row banner">
       <div class="col-6 caixa-texto  text-light">
         <h2>Seja Bem-vindo(a)</h2>
-        <h5>Quarde idéias ou simplesmente compartilhe um pensamento!</h5>
+        <h5>Guarde idéias ou simplesmente compartilhe um pensamento!</h5>
         <div class="row">
           <div class="col-md-12 buttons">
             <a href="" data-toggle="modal" data-target="#novaPostagem">Nova Postagem</a>
@@ -724,8 +724,6 @@
                 y2="110.95" xlink:href="freepik--#Degradado_sin_nombre_15--inject-396"></linearGradient>
             </defs>
           </svg>
-
-
         </div>
       </div>
     </div>
@@ -775,15 +773,15 @@
           <label for="">Texto</label>
           <textarea name="texto" id="texto" rows="3" class="form-control mb-2"></textarea>
 
-          <label for="">Escolha um tema ou: <a href=""> Adicione um novo</a></label>
+          <label for="">Escolha um tema ou: <a data-dismiss="modal" routerLink='/tema' > Adicione um novo</a></label>
           <select name="tema" id="tema" class="form-control">
             <option value="">Temas</option>
           </select>
         </div>
       </div>
       <div class="modal-footer d-flex justify-content-center">
-        <button type="button" class="btn btn-success" data-dismiss="modal">Publicar</button>
-        <button type="button" class="btn btn-danger">Cancelar</button>
+        <button type="button" class="btn btn-success" >Publicar</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
       </div>
     </div>
   </div>

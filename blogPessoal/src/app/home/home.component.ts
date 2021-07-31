@@ -16,13 +16,13 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(){
 
-    // if(environment.token == ''){
-    //   this.router.navigate(['/logar'])
-    //   Swal.fire({
-    //     icon: 'info',
-    //     title: 'Oops...',
-    //     text: 'Sua conexão inspirou!',
-    //   });
-    // }
+    if(environment.token == ''){
+      this.router.navigate(['/logar'])
+      Swal.fire({
+        icon: 'info',
+        title: 'Oops...',
+        text: 'Sua conexão inspirou!',
+      });
+    }
   }
 }
