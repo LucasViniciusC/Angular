@@ -59,6 +59,16 @@
   color: rgb(124, 124, 124);
   padding-left: 10px;
 }
+.tema-input{
+  position: relative;
+}
+
+.tema-input i{
+  position: absolute;
+  top: 37%;
+  right: 5%;
+  opacity: 20%;
+}
 
 .buttons {
   display: flex;
@@ -93,6 +103,12 @@
     border-color: none;
     background-color: rgb(46, 46, 46);
 }
+
+
+.button-component button{
+  margin-right: 5px ;
+}
+
 @keyframes animation-svg-1 {
   0% {
     transform: translate(-10%);

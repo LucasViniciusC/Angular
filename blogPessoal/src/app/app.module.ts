@@ -6,7 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 
-import { AppComponent } from './app.component';
+import { AppComponent } from './app.component'; 
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { TelaLoginComponent } from './tela-login/tela-login.component';

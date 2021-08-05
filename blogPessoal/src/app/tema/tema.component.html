@@ -1,6 +1,6 @@
 <div class="container-fluid conteudo-tema">
 
-  <svg class="animated svg-1" id="freepik_stories-taken" xmlns="http://www.w3.org/2000/svg"
+  <svg class="animated svg-1 d-none d-md-block" id="freepik_stories-taken" xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500" version="1.1" xmlns:svgjs="http://svgjs.com/svgjs">
     <style>
       svg#freepik_stories-taken:not(.animated) .animable {
@@ -948,12 +948,13 @@
 
       <div class="row  d-flex justify-content-center">
         <div class="col-md-6 input-busca">
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="Informe a descrição do seu Tema">
+          <div class="form-group tema-input ">
+            <input [(ngModel)]='tema.descricao' type="text" class="form-control" placeholder="Informe a descrição do seu Tema">
+            <i class="fas fa-search"></i>
           </div>
 
           <div class="buttons">
-            <button>Adicionar</button>
+            <button (click)='cadastrar()'>Adicionar</button>
           </div>
         </div>
       </div>
@@ -968,35 +969,24 @@
     </div>
   </div>
 
-  <div class="row">
-    <div class="col-md-12 mt-4">
+  <div class="row d-flex justify-content-center">
+    <div class="col-md-6 mt-4 ">
       <table class="table table-striped table-light table-hover">
         <thead class="thead-dark">
           <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
+            <th scope="col">ID</th>
+            <th scope="col">Descrição</th>
+            <th scope="col">Modificações</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
+          <tr *ngFor='let item of listaTemas'>
+            <th>{{item.id}}</th>
+            <td>{{item.descricao}}</td>
+            <td class="d-flex justify-content-end button-component">
+              <button class="btn btn-info">Editar</button>
+              <button class="btn btn-danger">Excluir</button>
+            </td>
           </tr>
         </tbody>
       </table>
